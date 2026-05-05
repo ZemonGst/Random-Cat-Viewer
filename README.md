@@ -1,16 +1,41 @@
-# React + Vite
+# 🐱 Cat Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern web application for discovering random cat breeds with beautiful imagery and detailed information.
 
-Currently, two official plugins are available:
+## 🚀 Application Logic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+First, when the component loads, it checks if the user prefers a light or dark theme and fetches the initial cat. While loading, a skeleton placeholder is shown to ensure a smooth user experience. Once the data is successfully fetched, the cat’s image, name, origin, and temperament are displayed in a polished glassmorphic interface. A dedicated button allows users to fetch a new cat instantly. The theme toggle enables seamless switching between light and dark modes, dynamically adjusting the interface to suit user preference. This flow ensures a responsive and engaging experience for every visitor.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Premium UI**: Modern glassmorphic design with smooth animations and transitions.
+- **Dynamic Content**: Fetches random cats from the FreeAPI, including breed names, descriptions, and origins.
+- **Theme Support**: Includes a dark/light mode toggle that respects system preferences.
+- **Responsive Layout**: Designed to look great on all devices.
+- **Smooth UX**: Features skeleton loaders and micro-animations for a high-end feel.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Core framework for building the user interface.
+- **Vanilla CSS**: Custom design system with glassmorphism and modern typography (Inter).
+- **FreeAPI**: Backend data source for cat breed information.
+- **Bun/Vite**: Fast development server and build tool.
+
+## 📦 Getting Started
+
+### Prerequisites
+- [Bun](https://bun.sh/) (or Node.js/npm)
+
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+
+## 📄 License
+This project is open-source and available for everyone.

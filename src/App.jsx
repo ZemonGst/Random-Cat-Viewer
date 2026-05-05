@@ -23,7 +23,6 @@ function App() {
     } catch (error) {
       console.error("Error fetching cat:", error);
     } finally {
-      // Small delay for better UX and animation feel
       setTimeout(() => setLoading(false), 300);
     }
   };
